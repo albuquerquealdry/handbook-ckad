@@ -1,4 +1,4 @@
-# 📝 CKAD Handbook - Preparação para o Certificado Kubernetes Developer (CKAD) 🐳
+# 📝 CKAD Handbook - Preparação para o Certificado Kubernetes Developer (CKAD) by Aldry Albuquerque 🐳
 
 Bem-vindo ao meu repositório de preparação para o exame **CKAD (Certified Kubernetes Application Developer)**! Aqui, registro tudo o que estou estudando e as práticas que estou realizando para garantir que estarei pronto para a prova.
 
