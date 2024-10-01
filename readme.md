@@ -1,5 +1,4 @@
-
-# 📝 CKAD Handbook - Preparação para o Certificado Kubernetes Developer (CKAD) By Aldry Albuquerque 🐳
+# 📝 CKAD Handbook - Preparação para o Certificado Kubernetes Developer (CKAD) 🐳
 
 Bem-vindo ao meu repositório de preparação para o exame **CKAD (Certified Kubernetes Application Developer)**! Aqui, registro tudo o que estou estudando e as práticas que estou realizando para garantir que estarei pronto para a prova.
 
@@ -9,8 +8,9 @@ Bem-vindo ao meu repositório de preparação para o exame **CKAD (Certified Kub
 2. [📂 Estrutura do Repositório](#-estrutura-do-repositório)
 3. [🧠 Tópicos de Estudo](#-tópicos-de-estudo)
 4. [⚙️ Como Utilizar Este Repositório](#️-como-utilizar-este-repositório)
-5. [🚀 Dicas para a Prova](#-dicas-para-a-prova)
-6. [📝 Anotações Pessoais](#-anotações-pessoais)
+5. [🎯 Comandos Imperativos](#-comandos-imperativos)
+6. [🚀 Dicas para a Prova](#-dicas-para-a-prova)
+7. [📝 Anotações Pessoais](#-anotações-pessoais)
 
 ---
 
@@ -55,6 +55,48 @@ E mais...
    ```
 2. Explore os diferentes **kinds** com exemplos práticos.
 3. Use os scripts e templates para testar no seu cluster Kubernetes.
+
+
+## 🎯 Comandos Imperativos
+
+Abaixo estão os comandos imperativos mais utilizados no Kubernetes. Eles são úteis quando você precisa criar ou modificar rapidamente recursos diretamente pela linha de comando sem usar arquivos YAML.
+
+- Criar um pod:
+  ```bash
+  kubectl run nginx --image=nginx
+  ```
+
+- Expor um pod com um serviço:
+  ```bash
+  kubectl expose pod nginx --port=80 --target-port=80
+  ```
+
+- Criar um deployment:
+  ```bash
+  kubectl create deployment nginx --image=nginx
+  ```
+
+- Escalar um deployment:
+  ```bash
+  kubectl scale deployment nginx --replicas=3
+  ```
+
+- Criar um configmap a partir de um arquivo:
+  ```bash
+  kubectl create configmap meu-config --from-file=config.txt
+  ```
+
+- Criar um secret a partir de um arquivo:
+  ```bash
+  kubectl create secret generic meu-secret --from-file=secret.txt
+  ```
+
+- Criar um job imperativamente:
+  ```bash
+  kubectl create job meu-job --image=busybox -- echo "Hello, Kubernetes!"
+  ```
+
+Esses comandos permitem realizar tarefas rapidamente sem precisar criar arquivos de configuração antecipadamente.
 
 ## 🚀 Dicas para a Prova
 
