@@ -212,6 +212,11 @@ Abaixo estão os comandos imperativos mais utilizados no Kubernetes. Eles são �
   kubectl create job meu-job --image=busybox -- echo "Hello, Kubernetes!"
   ```
 
+- Expor Deployment NodePort:
+  ```bash
+  kubectl expose deployment my-deployment --type=NodePort --port=80 --target-port=80 --name=my-service
+  ```
+  
 Esses comandos permitem realizar tarefas rapidamente sem precisar criar arquivos de configuração antecipadamente.
 
 ## 🚀 Dicas para a Prova
